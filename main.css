@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --NavyColor: #242f9b;
+  --NaviLightColor: #646fd4;
+  --BlueNavyColor: #9ba3eb;
+  --BlueLightNavyColor: #dbdffd;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--NaviLightColor);
+  color: white;
+  font-size: 14px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+button{
+    background-color: var(--NavyColor);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    height: 30px;
+    width: 75px;  
+}
+button:hover{
+    background-color: white;
+    color: var(--NavyColor);
+    transition: 300ms;
+    cursor: pointer;
+}
+.main-container {
+  height: 700px;
+  padding: 15px;
+  
+}
+.main-container #value {
+  text-align: center;
+  font-size: 4.5em;
+  width: 100%;
+}
+.main-container #taskName{
+    font-size: 2em;
+}
+.tasks-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tasks-container #itTask {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 25px 0;
+}
+
+.tasks-container #bAdd{
+    background-color: var(--NavyColor);
+    width: 100%;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 25px;
+}
+.tasks-container #bAdd:hover{
+    color: var(--NavyColor);
+    background-color: white;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+#tasks .task {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.start-button{
+    font-size: 10px;
+}
+.done{
+    padding: 0px 13px;
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-top: 75px;
+}
+
+@media (min-width:768px){
+    .main-container{
+        background-color: var(--BlueNavyColor);
+        width: 600px;
+        margin: 45px auto;
+        border-radius: 10px;
+    }
+
+    .main-container #value {
+        font-size: 7.5em;
+    }
+    .tasks-container, .main-container #taskName{
+        padding: 0px 40px;
+    }
+}
